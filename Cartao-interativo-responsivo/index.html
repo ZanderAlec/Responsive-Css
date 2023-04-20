@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Card</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="column-container">
+            <div class="gradiant-bkg-card">
+                <div class="container-card">
+                        <img class="card-back card" src="img/bg-card-back.png" alt="">
+                        <h2 class=" clr-white smll-size-card visual-cvc-card">000</h2>
+      
+                        <img class="card-front card" src="img/bg-card-front.png" alt="">
+                        <h2 class="clr-white medium-size-card visual-num-card">0000 0000 0000 0000</h2>
+                        <h2 class="clr-white smll-size-card  visual-name-card">Jane Appleseed</h2>
+                        <h2 class="clr-white smll-size-card  visual-date-card">00/00</h2>
+    
+                        <div class="circle-close"></div>
+                        <div class="circle-open"></div>
+                </div>
+            </div>
+    
+            <div class="container-form">
+    
+                <form action="">
+                    <div class="field">
+                        <label>cardholder name</label>
+                        <input id="name" type="text" name="nome" placeholder="e.g. Fulano S. Sicrano" >
+                        <span class="error-msg" id="only-letter-error">Wrong format, letters only</span>
+                        <span class="error-msg empty">Can't be blank</span>
+                    </div>
+    
+                    <div  class="field">
+                        <label>card number</label>
+                        <input MAXLENGTH='16' id="cardNumber" type="text" name="numero" placeholder="e.g. 1234 5678 9100 0000">
+                        <span class="error-msg" id="only-number-error">Wrong format, numbers only</span>
+                        <span class="error-msg empty" >Can't be blank</span>
+                    </div>
+                    
+                    <div class="container-date-cvc">
+    
+                        <div class="field field--width-data ">
+                            <label>exp. date (mm/yy)</label>
+                            <div class="field-mes-ano">
+                                <input MAXLENGTH='2' class="input-mes-ano" id="month" type="text" name="month" placeholder="MM">
+                                <input MAXLENGTH='2' class="input-mes-ano" id="year" type="text" name="year" placeholder="YY">
+                            </div>
+                            <span class="error-msg empty" >Can't be blank</span>
+                        </div>  
+    
+                        <div  class="field field--width-cvc">
+                            <label >cvc</label>
+                            <input MAXLENGTH='3' class="cvc-field" id="cvc" type="text" name="cvc" placeholder="e.g. 123">
+                            <span class="error-msg empty" >Can't be blank</span>
+                        </div>
+                    </div>
+                  
+    
+                    <button class="confirm-bttm">Confirm</button>
+                
+                </form>
+    
+                <div class="success-card">
+    
+                    <img class="sucess-icon" src="img/icon-complete.svg" alt="">
+    
+                    <h2 class="sucess-text sucess-title">
+                        THANK YOU!
+                    </h2>
+    
+                    <p class="sucess-text sucess-msg">We've added your card details</p>
+                    
+                    <button class="confirm-bttm sucess-bttm">Continue</button>
+                </div>  
+    
+            </div>
+        </div>
+        
+        <script src="main.js"></script>
+
+    </body>
+</html>

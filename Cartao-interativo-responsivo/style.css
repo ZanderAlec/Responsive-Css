@@ -1,0 +1,340 @@
+:root{
+    --error-red: hsl(0, 100%, 66%);
+
+    --neutral-white: hsl(0, 0%, 100%);
+
+    --light-purple: hsl(270, 3%, 87%);
+    --medium-purple: hsl(279, 6%, 55%);
+    --dark-purple: hsl(278, 68%, 11%);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body{
+    font-size: 18px;
+}
+
+img{
+    display: block; 
+    max-width: 100%;
+}
+
+
+.column-container{
+    height: 100vh;
+    width: 100%;
+}
+
+
+/*--------------Cartão-----------------------------------*/
+
+.gradiant-bkg-card{
+    background-image: url(img/bg-main-mobile.png);
+    background-size: 100% 100% ;
+    margin-bottom: 5rem;
+    height: 13rem;
+} 
+
+.container-card{
+    max-width: 25rem;
+    margin: auto;
+    position: relative;
+}
+
+.card{
+    width: 15.8rem;
+    position: relative;
+}
+
+.card-front{
+    left: 1rem;
+    top: -1.77rem;
+    z-index: 2;
+}
+
+.card-back{
+    z-index: 1;
+    top: 2rem;
+    left: 3.2rem;
+}
+
+/*informações do cartão-----------------------------------*/
+.clr-white{
+    color: var(--neutral-white);
+}
+
+.smll-size-card{
+    font-size: 0.55em;
+    font-weight: 50;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    display: inline-block;
+}
+
+.medium-size-card{
+    font-size: 1.3rem;
+    display: inline-block;
+}
+
+.visual-cvc-card{
+    position: absolute;
+    top: 5.9rem;
+    left: 15.5rem;
+    z-index: 2;
+}
+
+.visual-num-card{
+    position: absolute;
+    z-index: 2;
+    top: 11rem;
+    left: 2.5rem;
+}
+
+.visual-name-card{
+    position: absolute;
+    z-index: 2;
+    top: 13.5rem;
+    left: 2.6rem;
+}
+
+.visual-date-card{
+    position: absolute;
+    z-index: 2;
+    top: 13.5rem;
+    left: 13.1rem;
+}
+
+
+.circle-close{
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    top: 8rem;
+    left: 2.4rem;
+    z-index: 2;
+}
+
+.circle-open{
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid white;
+    border-radius: 15px;
+    position: absolute;
+    top: 8.4rem;
+    left: 4.6rem;
+    z-index: 2;
+}
+
+/*--------------Formulário-----------------------------------*/
+
+.container-form{
+    width: min(90%, 30rem);
+    margin: auto;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.field{
+    margin-bottom: 0.5rem;
+}
+
+.field label{
+    color: var(--dark-purple);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.field input{
+    border: 2px solid var(--light-purple);
+    border-radius: 5px;
+    width: 100%;
+    height: 3rem;
+    margin-top: 0.4rem;
+}
+
+.field input::placeholder{
+   color: var(--light-purple);
+   font-weight: 500;
+   font-size: 1rem;
+   padding-left: 10px;
+}
+
+.field input:focus{
+    outline-color: var(--medium-purple);
+
+}
+
+.container-date-cvc{
+    display: flex;
+    justify-content: space-around;
+}
+
+.field--width-data{
+    flex: 0.4 2 20em;
+    margin-right: 0.4em;
+}
+
+.field--width-cvc{
+    flex: 2 2 20em;
+}
+
+.field-mes-ano{
+    display:flex;
+    justify-content: space-around;
+}
+
+.input-mes-ano:first-child{
+    margin-right: 0.4rem;
+}
+
+.error-msg{
+    color: var(--error-red);
+    font-size: 0.7rem;
+    display: none;
+}
+
+.confirm-bttm{
+    width: 100%;
+    height: 3rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 10px;
+    color:white;
+    background-color: var(--dark-purple);
+}
+
+.confirm-bttm:hover{
+    cursor: pointer;
+    background-color: hsl(278, 63%, 16%);
+}
+
+
+/*--------------Mensagem de sucesso-----------------------------------*/
+
+.success-card{
+    /* outline: 1px solid red; */
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0rem;
+    display:none;
+}
+
+.sucess-icon{
+    margin: auto;
+}
+
+.sucess-text{
+    text-align: center;
+}
+
+.sucess-title{
+    padding-top:2rem;
+}
+
+.sucess-msg{
+    padding-top: 1rem;
+}
+
+.sucess-bttm{
+    margin-top: 3rem;
+}
+
+@media(min-width: 60em){
+    .column-container{
+        display: flex;
+    }
+
+    .container-form{
+        width: 30vw;
+        margin: 20vh 10vw 0 24vw;
+    }
+
+    .field{
+        margin-bottom: 0;
+    }
+
+    .container-form{
+        font-size: 2vw;
+    }
+    
+    .gradiant-bkg-card{
+        height: 100%;
+        width: 30vw;
+    }
+
+    .container-card{
+        min-width: 100vw;
+        height: 100%;
+        margin: none;
+        position: absolute;
+    }
+
+    .card{
+        width: 28vw;
+        height: 32vh;
+    }
+
+    .card-front{
+        top: -15vh;
+        left: 10vw;
+    }
+
+    .card-back{
+        top: 54vh;
+        left: 15vw;
+    }
+
+    .smll-size-card{
+        font-size: 1.2vw;
+    }
+    
+    .medium-size-card{
+        font-size: 2.5vw;
+    }
+
+    .visual-cvc-card{
+        left: 37vw;
+        top: 68.2vh;
+    }
+
+    .visual-num-card{
+        left: 12vw;
+        top: 33vh;
+    }
+    
+    .visual-name-card{
+        left: 12vw;
+        top: 42vh;
+    }
+    
+    .visual-date-card{
+        left: 32vw;
+        top: 42vh;
+    }
+    
+    .circle-close{
+        width: 4vw;
+        height: 4vw;
+        border-radius: 100%;
+        top: 20vh;
+        left: 12vw;
+    }
+    
+    .circle-open{
+        width: 2vw;
+        height: 2vw;
+        border-radius: 100%;
+        top: 22vh;
+        left: 18vw;
+    }
+}
