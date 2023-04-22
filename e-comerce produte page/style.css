@@ -1,0 +1,178 @@
+:root{
+    --Orange: hsl(26, 100%, 55%);
+    --Pale-orange: hsl(25, 100%, 94%);
+    --Very-dark-blue: hsl(220, 13%, 13%);
+    --Dark-grayish-blue: hsl(219, 9%, 45%);
+    --Grayish-blue: hsl(220, 14%, 75%);
+    --Light-grayish-blue: hsl(223, 64%, 98%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spectral', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*conf gerais--------------------*/
+
+.container{
+    padding: 0 10%;
+}
+
+.flex-row-btwn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.round-border{
+    border-radius: 10px;
+}
+
+/*Header---------------------------------------------------*/
+header{
+    
+    /* outline: 1px solid red; */
+    padding: 1.2rem 0;
+}
+
+.hamburguer-menu{
+    width: 1rem;
+}
+
+.logo{
+    width: 7rem;
+    margin-left: 0.5rem;
+}
+
+.cart{
+    width: 1.3rem;
+}
+
+.profile-icon{
+    width: 1.5rem;
+    margin-left: 0.7rem;
+}
+
+/*imagem do produto-----------------------------------------*/
+
+.prod-img-box{
+    width: 100%;
+    position: relative;
+}
+
+.prod-img{
+    width: 100%;
+}
+
+.slide-button {
+    background-color: white;
+    padding: 0.5rem 0.7rem;
+    border-radius: 100%;
+}
+
+.previous-icon{
+    position: absolute;
+    top: 8rem;
+    left: 1rem;
+}
+
+.next-icon{
+    position: absolute;
+    top: 8rem;
+    right: 1rem;
+}
+
+.preview-images-box{
+    display: none;
+}
+
+/*Descrição do produto---------------------------------------*/
+
+
+.company-title{
+    margin-top: 1rem ;
+    color: var(--Orange);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.prod-title{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.prod-desc{
+    color: var(--Dark-grayish-blue);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+/*preco-----*/
+
+.price{
+    /* outline: 1px solid red; */
+    margin: 1.5rem 0;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount{
+    background-color: var(--Pale-orange);
+    color: var(--Orange);
+    display: inline-block;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.normal-price{
+    color: var(--Grayish-blue);
+    text-decoration:line-through;
+    font-size: 0.9rem;
+}
+
+/*Quantidade------------------*/
+
+.discount-price-box{
+    display: flex;
+}
+
+.amount{
+    background-color: var(--Light-grayish-blue);
+    padding: 0.5rem;
+}
+
+.minus-icon, 
+.plus-icon{
+    cursor: pointer;
+    padding: 10px;
+}
+
+.add-bttm{
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: white;
+    background-color: var(--Orange);
+    border: none;
+}
+
+.add-bttm img{
+    width: 1rem;
+    margin-right: 1rem;
+}
+
+.add-bttm:hover{
+    background-color:hsl(26, 100%, 61%);
+    cursor: pointer;
+}
+
