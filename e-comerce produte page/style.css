@@ -18,7 +18,7 @@
 /*conf gerais--------------------*/
 
 .container{
-    padding: 0 10%;
+    padding: 0 7%;
 }
 
 .flex-row-btwn{
@@ -29,6 +29,10 @@
 
 .round-border{
     border-radius: 10px;
+}
+
+.no-scroll{
+    overflow: hidden;
 }
 
 /*Header---------------------------------------------------*/
@@ -59,18 +63,55 @@ header{
 }
 
 .menu{
+    list-style: none;
+    background-color: white;
+    height: 100vh;
+    width: 65vw;
+    padding-left: 1rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+.close-menu{
+    margin: 1.5rem 0 1.5rem 0rem;
+    padding: 10px;
+}
+
+.menu-item{
+    margin-bottom: 1.5rem;
+}
+
+.menu-item a{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--Very-dark-blue);
+    font-weight: 700;
+}
+
+.bkg-dark{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 2;
     display: none;
 }
 
 /*imagem do produto-----------------------------------------*/
-
-.prod-img-box{
+.prod-img-box, 
+.prod-img{
     width: 100%;
 }
 
 .prod-img{
     position: relative;
-    width: 100%;
     border-radius: 0;
 }
 
@@ -96,7 +137,6 @@ header{
 
 /*Descrição do produto---------------------------------------*/
 
-
 .company-title{
     margin-top: 1rem ;
     color: var(--Orange);
@@ -117,15 +157,12 @@ header{
     font-weight: 500;
 }
 
-
 /*preco-----*/
 
 .price{
     /* outline: 1px solid red; */
     margin: 1.5rem 0;
     font-weight: 700;
-    display: flex;
-    justify-content: space-between;
 }
 
 .discount{
@@ -145,10 +182,6 @@ header{
 }
 
 /*Quantidade------------------*/
-
-.discount-price-box{
-    display: flex;
-}
 
 .amount{
     background-color: var(--Light-grayish-blue);
@@ -177,7 +210,7 @@ header{
 }
 
 .add-bttm:hover{
-    background-color:hsl(26, 100%, 61%);
+    background-color:var(--Orange);
     cursor: pointer;
 }
 
@@ -189,13 +222,15 @@ header{
         margin: auto;
     }
 
-    .previous-icon{
+    .slide-button{
         top: 40vw;
+    }
+
+    .previous-icon{
         left: 5rem;
     }
 
     .next-icon{
-        top: 40vw;
         right: 5rem;
     }
 }
@@ -232,10 +267,6 @@ header{
         padding: 0 10%;
     }
 
-    /* div{
-        outline: 1px solid red;
-    } */
-
     .col{
         width: 50%;
         padding: 0 5% ;
@@ -256,22 +287,31 @@ header{
         width: 12vw;
     }
 
+    .hamburguer-menu,
+    .close-menu{
+        display: none;
+    }
+
     .menu{
         /* outline: 1px solid red; */
         display: inline-block;
+        position: static;
+        background-color: none;
+        width: auto;
+        height: auto;
         margin-left: 2rem;
-        text-decoration: none;
     }
     
     .menu-item{
         display: inline-block;
+        margin: 0;
     }
     
     .menu-item a{
         padding: 2vw 0.5rem;
         font-size: 1.2vw;
-        text-decoration: none;
         color: var(--Dark-grayish-blue);
+        font-weight: 100;
     }
     
     .menu-item a:hover{
@@ -320,6 +360,7 @@ header{
     /*preço---------------*/
 
     .price{
+        align-items: start;
         flex-direction: column;
     }
 
