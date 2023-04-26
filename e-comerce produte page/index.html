@@ -45,8 +45,47 @@
                 </div>
 
                 <div class="flex-row-btwn">
-                    <img  class="cart" src="imgs/icon-cart.svg" alt="cart">
-                    <img  class="profile-icon" src="imgs/image-avatar.png" alt="">
+                    
+                    <div class="cart-box">
+                        <img class="cart-icon pointer" src="imgs/icon-cart.svg" alt="cart">
+                        <div class="cart-notify"><p id="notify-number">0</p></div>
+                    </div>
+                   
+                    
+                    <img  class="profile-icon pointer" src="imgs/image-avatar.png" alt="">
+
+                    <div class="cart round-border">
+                        <div class="cart-title cart-container">
+                            <h2>cart</h2>
+                        </div>
+
+                        <div class="cart-container">
+                            <div class="cart-empty">
+                                <p class="cart-text cart-text--bold">Your cart is empty.</p>
+                            </div>
+
+                            <div class="cart-item">
+                                <div class="flex-row-btwn">
+
+                                    <img  class="cart-item-img round-border" src="imgs/image-product-1-thumbnail.jpg" alt="">
+                                    
+                                    <div class="cart-item-desc">
+
+                                        <p class="cart-text">fall limited edition Sneakers</p>
+                                        <p class="cart-text">$125.00</p>
+                                        <p class="cart-text">x<span class="quant-itens">1</span></p>
+                                        <p class ="cart-total cart-text cart-text--bold" >$<span id="card-total">125.00</span></p> 
+
+                                    </div>
+
+                                    <img id="clean-cart"  class="pointer" src="imgs/icon-delete.svg" alt="lixo">
+                                </div>
+
+                                <button class="cart-bttm bttm pointer round-border" >Checkout</button>
+                            </div>
+
+                        </div>
+                    </div>  
                 </div>
             </header>
         </div>
@@ -87,12 +126,12 @@
     
                 <div class="buy-amount-cols">
                     <div class=" flex-row-btwn amount round-border">
-                        <img class="minus-icon" src="imgs/icon-minus.svg" alt="">
-                        <p class="amount-number" >0</p>
-                        <img class="plus-icon" src="imgs/icon-plus.svg" alt="">
+                        <img class="minus-icon pointer" src="imgs/icon-minus.svg" alt="">
+                        <p class="quant-itens">0</p>
+                        <img class="plus-icon pointer" src="imgs/icon-plus.svg" alt="">
                     </div>
 
-                    <button class="add-bttm round-border"><img src="imgs/icon-cart.svg">Add to cart</button>
+                    <button id="add-bttm" class="bttm add-bttm pointer round-border"><img src="imgs/icon-cart.svg">Add to cart</button>
                 </div>
             </div>
         </div>
