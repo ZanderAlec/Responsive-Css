@@ -10,6 +10,39 @@
 </head>
 <body>
 
+    <div class="bkg-dark"></div>
+
+    <!--Prod Image full display-------------------------------->
+    <div class="full-display-box">
+       
+        <div class="full-display-img-box">
+            <!--Close button-->
+            <img class="close-bttm close-bttm--full pointer" src="imgs/icon-close.svg" alt="close">
+
+            <!--Slide buttons----------------------------------------->
+            <img id="full-previous" class="slide-button slide-button--full  previous-icon pointer" src="imgs/icon-previous.svg" alt="">
+            <img id="full-next" class="slide-button slide-button--full next-icon pointer" src="imgs/icon-next.svg" alt="">
+
+            <!--Slider Images----------------------------------------->
+            <div class="slider"> 
+                <div class="slide-wraper ">
+                    <img class="prod-img " src="imgs/image-product-1.jpg" alt="">
+                    <img class="prod-img " src="imgs/image-product-2.jpg" alt="">
+                    <img class="prod-img " src="imgs/image-product-3.jpg" alt="">
+                    <img class="prod-img " src="imgs/image-product-4.jpg" alt="">
+                </div>  
+            </div>
+        </div>
+
+        <!--Preview Images----------------------------------------->
+        <div class="display-previews preview-images-box flex-row-btwn">
+            <img class="preview-images round-border pointer" src="imgs/image-product-1-thumbnail.jpg" alt="">
+            <img class="preview-images round-border pointer" src="imgs/image-product-2-thumbnail.jpg" alt="">
+            <img class="preview-images round-border pointer" src="imgs/image-product-3-thumbnail.jpg" alt="">
+            <img class="preview-images round-border pointer" src="imgs/image-product-4-thumbnail.jpg" alt="">
+        </div>
+    </div>
+    
     <!-----------------------header------------->
     <div class="outer-box">
 
@@ -18,12 +51,9 @@
                 <div class="flex-row-btwn">
                     <img class="hamburguer-menu" src="imgs/icon-menu.svg" alt="menu">
                     <img class="logo" src="imgs/logo.svg" alt="Sneakers">
-
-                    <div class="bkg-dark"></div>
-
                     <menu>
                         <ul class="menu">
-                            <img class="close-menu" src="imgs/icon-close.svg" alt="close">
+                            <img class="close-bttm close-bttm--menu" src="imgs/icon-close.svg" alt="close">
 
                             <li class="menu-item">
                                 <a href="">Collections</a>
@@ -89,24 +119,46 @@
                 </div>
             </header>
         </div>
-    
+
         <!----------Body------------------------------>
         <div class="break-col inner-responsive">
             <div class="col">
+                <!--PRODUCT DISPLAY---------------------------------------------------------------->
                 <div class=" prod-img-box">
-                    <img class="prod-img " src="imgs/image-product-1.jpg" alt="">
-                    <img class="slide-button previous-icon" src="imgs/icon-previous.svg" alt="">
-                    <img class="slide-button next-icon" src="imgs/icon-next.svg" alt="">
 
+                    <!--Slider Images----------------------------------------->
+                   
+                    <div  class="slider pointer"> 
+                        <div id="full-bttm" class="full-display-bttm"></div>
+                        <!--preview buttons-------------------------------------------->
+                        <input id ="preview-bttm5" class="slid-controller" type="radio" name="img" checked>
+                        <input id ="preview-bttm6" class="slid-controller" type="radio" name="img" >
+                        <input id ="preview-bttm7" class="slid-controller" type="radio" name="img">
+                        <input id ="preview-bttm8" class="slid-controller" type="radio" name="img">
+
+                        <div  class="slide-wraper">
+                            <img class="prod-img " src="imgs/image-product-1.jpg" alt="">
+                            <img class="prod-img " src="imgs/image-product-2.jpg" alt="">
+                            <img class="prod-img " src="imgs/image-product-3.jpg" alt="">
+                            <img class="prod-img " src="imgs/image-product-4.jpg" alt="">
+                        </div>  
+                    </div>
+
+                    <!--Slide buttons----------------------------------------->
+                    <img id="previous" class="slide-button previous-icon" src="imgs/icon-previous.svg" alt="">
+                    <img id="next" class="slide-button next-icon" src="imgs/icon-next.svg" alt="">
+
+                    <!--Preview Images----------------------------------------->
                     <div class="preview-images-box flex-row-btwn">
-                        <img class="preview-images round-border" src="imgs/image-product-1.jpg" alt="">
-                        <img class="preview-images round-border" src="imgs/image-product-2.jpg" alt="">
-                        <img class="preview-images round-border" src="imgs/image-product-3.jpg" alt="">
-                        <img class="preview-images round-border" src="imgs/image-product-4.jpg" alt="">
+                        <img id ="preview5" class="preview-images round-border pointer" src="imgs/image-product-1-thumbnail.jpg" alt="">
+                        <label for="preview-bttm6"><img id ="preview6" class="preview-images round-border pointer" src="imgs/image-product-2-thumbnail.jpg" alt=""></label>
+                        <label for="preview-bttm7"><img id ="preview7" class="preview-images round-border pointer" src="imgs/image-product-3-thumbnail.jpg" alt=""></label>
+                        <label for="preview-bttm8"><img id ="preview8" class="preview-images round-border pointer" src="imgs/image-product-4-thumbnail.jpg" alt=""></label>
                     </div>
                 </div>  
             </div>
-    
+            
+            <!--Product infos---------------------------------------------------------------->
             <div class="col container info-prod">
                 <h3 class="company-title">sneaker company</h3>
                 
