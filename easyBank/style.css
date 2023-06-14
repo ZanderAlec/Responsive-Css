@@ -1,0 +1,153 @@
+:root{
+/*Primary*/
+
+--Dark-Blue: hsl(233, 26%, 24%);
+--Lime-Green: hsl(136, 65%, 51%);
+--Bright-Cyan: hsl(192, 70%, 51%);
+
+/*Neutral*/
+
+--Grayish-Blue: hsl(233, 8%, 62%);
+--Light-Grayish-Blue: hsl(220, 16%, 96%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+
+/*Weigts-------*/
+
+--light-weight: 300;
+--medium-weight: 400;
+--heavy-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+
+header{
+    margin: 1rem 0;
+}
+    
+.container{
+    padding: 0 min(10rem, 8%);
+}
+
+.content-box{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.flex-row-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    color: var(--Dark-Blue);
+    font-weight: var(--light-weight);
+}
+
+.title-header{
+    font-weight: var(--heavy-weight);
+    font-size: 2rem;
+}
+
+.title-G{
+    font-size: 2rem;
+}
+
+.title-M{
+    font-size: 1.2rem;
+}
+
+.title-S{
+    text-align: left;
+    font-size: 1rem;
+}
+
+.text{
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    color: var(--Grayish-Blue);
+}
+
+.text-header{
+    text-align: justify;
+}
+
+.text--small{
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.article-autor{
+    font-size: 0.6rem;
+    text-align: left;
+}
+
+.bkg-light-grey{ background-color: var(--Light-Grayish-Blue)}
+
+.bkg-vanilla{ background-color: var(--Very-Light-Gray); }
+
+.bkg-dark{ background-color: var(--Dark-Blue); }
+
+.clicker{ cursor:pointer; }
+
+.title-M{ margin-top: 1.5rem;}
+
+.request-bttm{
+    padding: 5% 10%;
+    border-radius: 2rem;
+    color: white;
+    background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+    border: none;
+}
+
+.latest-box{
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.latest-box img{ width: 100%; }
+
+.article-text{ padding: 0 1.5rem; }
+
+menu{ display: none;}
+
+.menu-bttms{ position: relative;}
+
+.bttm-menu{
+    border: none;
+    background-color: white;
+}
+
+.hamburguer-icon{ height: 1.3rem;}
+
+.close-bttm{
+    position: absolute;
+    left:0.3rem;
+    display: none;
+}
+
+.close-bttm img{ width: 1rem;}
+
+.request-bttm--header{ display: none;}
+
+footer{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
