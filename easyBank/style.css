@@ -117,7 +117,10 @@ header{
     margin-top: 2rem;
 }
 
-.latest-box img{ width: 100%; }
+.latest-box img{ 
+    width: 100%; 
+    height: 50%;
+}
 
 .article-text{ padding: 0 1.5rem; }
 
@@ -150,4 +153,78 @@ footer{
 footer a{
     color: white;
     text-decoration: none;
+}
+
+.footer-item{
+    margin-top: 0.8rem ;
+    margin-bottom: 0.8rem ;
+}
+
+.banner-img{
+    background-image: url("images/bg-intro-mobile.svg");
+    background-position: 0rem 0.01rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 84vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-img img{
+    position: absolute;
+    top: -36vw;
+    width: 100%;
+}
+
+@media( min-width : 40em){
+    .flex-row-wrap{
+        flex-direction:row;
+        justify-content: space-between;
+    }
+
+    .flex-row-wrap>div:not(:first-child){
+        margin-left: 2rem;
+    }
+
+    .content-box, 
+    .text-header{
+        text-align: left;
+    }
+
+    .sixty-div{
+        width: 65%;
+    }
+
+    .banner{
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: center;
+        height: 40vw;
+    }
+
+    .banner-img{
+        background-image: url("images/bg-intro-desktop.svg");
+        background-size: 140%;
+        background-position: -2vw -16vw ;
+        height: 50rem;
+
+    }
+
+    .banner-img img{
+        top: -8vw;
+        left: 8vw;
+        bottom: 0;
+        width: 85%;
+    }
+
+    .banner-text{
+        flex-shrink: 1.4;
+        padding-left: 8%;
+        margin: auto 0;
+    }
+
+
+
+
 }
