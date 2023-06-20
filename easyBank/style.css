@@ -16,6 +16,10 @@
 --light-weight: 300;
 --medium-weight: 400;
 --heavy-weight: 700;
+
+/*Gradient-------*/
+
+--green-to-blue: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
 }
 
 *{
@@ -25,12 +29,16 @@
     font-family: 'Public Sans', sans-serif;
 }
 
-header{
-    margin: 1rem 0;
-}
+/*Geral----------------------------------------------*/
+
+header{ height: 4rem; }
+
+ul { list-style: none; }
+
+a { text-decoration: none;}
     
 .container{
-    padding: 0 min(10rem, 8%);
+    margin: 0 min(10rem, 8%);
 }
 
 .content-box{
@@ -47,6 +55,7 @@ header{
 .flex-row{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .title{
@@ -54,18 +63,11 @@ header{
     font-weight: var(--light-weight);
 }
 
-.title-header{
-    font-weight: var(--heavy-weight);
-    font-size: 2rem;
-}
+.title-header{ font-size: 2rem;}
 
-.title-G{
-    font-size: 2rem;
-}
+.title-G{ font-size: 2rem; }
 
-.title-M{
-    font-size: 1.2rem;
-}
+.title-M{ font-size: 1.2rem; }
 
 .title-S{
     text-align: left;
@@ -78,17 +80,10 @@ header{
     color: var(--Grayish-Blue);
 }
 
-.text-header{
-    text-align: justify;
-}
+.text-header{ text-align: justify;}
 
 .text--small{
     font-size: 0.8rem;
-    text-align: left;
-}
-
-.article-autor{
-    font-size: 0.6rem;
     text-align: left;
 }
 
@@ -102,13 +97,20 @@ header{
 
 .title-M{ margin-top: 1.5rem;}
 
+.hover-green:hover{
+    color: var(--Lime-Green);
+}
+
+/*---------------------------------------------------*/
 .request-bttm{
-    padding: 5% 10%;
+    padding: 1rem 2rem;
     border-radius: 2rem;
     color: white;
-    background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+    background-image: var(--green-to-blue);
     border: none;
 }
+
+/*Article links----------------------------------*/
 
 .latest-box{
     background-color: white;
@@ -124,7 +126,52 @@ header{
 
 .article-text{ padding: 0 1.5rem; }
 
-menu{ display: none;}
+.article-autor{
+    font-size: 0.6rem;
+    text-align: left;
+}
+
+/*Header menu----------------------------------------------*/
+
+.header-menu{ 
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    border-radius: 5px;
+    top: 4em;
+    width: 90%;
+    left: 5%; 
+    display: none;
+}
+
+.menu-itens{
+    padding: 0;
+    margin: 1rem ;
+}
+
+.menu-itens li{
+    display: block;
+    width: auto;
+    text-align: center;
+}
+
+.menu-itens li a{
+    display: inline-block;
+    padding: 0.5rem;
+    color: var(--Dark-Blue);
+    font-weight: var(--heavy-weight);
+}
+
+.menu-bkg{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 3.1rem;
+    background: linear-gradient(var(--Dark-Blue) 40%, transparent);
+    z-index: 1;
+    opacity: 0.9;
+    display: none;
+}
 
 .menu-bttms{ position: relative;}
 
@@ -133,33 +180,44 @@ menu{ display: none;}
     background-color: white;
 }
 
-.hamburguer-icon{ height: 1.3rem;}
+.hamburguer-bttm{ height: 0.8rem;}
 
 .close-bttm{
     position: absolute;
-    left:0.3rem;
+    right:0.3rem;
+    top: -2vw;
     display: none;
 }
 
-.close-bttm img{ width: 1rem;}
-
 .request-bttm--header{ display: none;}
+
+/*Footer--------------------------------------------------------*/
 
 footer{
     padding: 1rem 0;
     text-align: center;
 }
 
-footer a{
-    color: white;
-    text-decoration: none;
-}
-
 .footer-item{
-    margin-top: 0.8rem ;
-    margin-bottom: 0.8rem ;
+    margin: 0.6rem ;
 }
 
+.footer-menu{
+    margin-left: 5vw;
+}
+
+.footer-list-item a{
+    color: white;
+    display: block;
+    padding: 0.5rem;
+}
+
+.copyright{
+    color: var(--Grayish-Blue);
+    font-size: 0.8rem;
+}
+
+/*banner------------------------------------------------*/
 .banner-img{
     background-image: url("images/bg-intro-mobile.svg");
     background-position: 0rem 0.01rem;
@@ -177,10 +235,15 @@ footer a{
     width: 100%;
 }
 
-@media( min-width : 40em){
+/*DESKTOP-----------------------------------------------------------------*/
+@media( min-width : 50em){
+    /*Geral----------------------------------------------*/
+    header{ height: 5rem; }
+
     .flex-row-wrap{
         flex-direction:row;
         justify-content: space-between;
+        align-items: center;
     }
 
     .flex-row-wrap>div:not(:first-child){
@@ -192,9 +255,33 @@ footer a{
         text-align: left;
     }
 
-    .sixty-div{
-        width: 65%;
+    .sixty-div{ width: 65%; }
+
+    .title-G{
+        font-size: 3vw;
     }
+    
+    .title-M{
+        font-size: 1.5vw;
+    }
+
+    .title-S{
+        font-size: 1.3vw;
+    }
+
+    .article-autor{
+        font-size: 0.8vw ;
+    }
+
+    .text{
+        font-size: 1.2vw;
+    }
+
+    .text--small{
+        font-size: 1vw;
+    }
+
+    /*Banner----------------------------------------------*/
 
     .banner{
         display: flex;
@@ -203,12 +290,16 @@ footer a{
         height: 40vw;
     }
 
+    
     .banner-img{
         background-image: url("images/bg-intro-desktop.svg");
         background-size: 140%;
         background-position: -2vw -16vw ;
-        height: 50rem;
 
+        /*O overflow foi ajutado para hidden, dessa forma qualquer parte da imagem que passa da div não aparece.
+        Como apenas a parte debaixo precisa aparecer, aumenta a altura para ter a imagem completa apenas embaixo.
+        */
+        height: 50rem;
     }
 
     .banner-img img{
@@ -224,7 +315,54 @@ footer a{
         margin: auto 0;
     }
 
+    .title-header{
+        font-size: 4vw;
+    }
 
 
+    /*Header menu----------------------------------------------*/
+    
+    .header-menu{
+        display: block;
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    .menu-bttms{ display: none;}
+    
+    .request-bttm:hover{
+        filter: brightness(120%);
+    }
+
+    .request-bttm--header{ display: block;}
+
+    .menu-itens{
+        height: 100;
+        margin: 0;
+    }
+
+    .menu-itens li a{
+        color: var(--Grayish-Blue);
+        font-weight: var(--light-weight);
+        padding: 1.8rem 0.5rem;
+    }
+
+    .menu-itens li a:hover{
+        color: var(--Dark-Blue);
+        font-weight: var(--heavy-weight);
+        border-bottom-width: 4px;
+        border-bottom-style: solid;
+        border-image: var(--green-to-blue) 1;
+    }
+
+    /*Footer menu----------------------------------------------*/
+    .footer-list-item{
+        text-align: left;
+    }
+
+    .footer-menu ul div:not(:first-child){
+        padding-left: 2vw;
+    }
 
 }

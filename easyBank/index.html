@@ -8,23 +8,27 @@
         <link rel="stylesheet" href="style.css">    
     </head>
     <body>
+
+
+        <!--Fundo escuro do menu dropdown-->
+        <div class="menu-bkg"></div> 
         
+        <!--Header-------------------------------->
         <header class="container flex-row">
             <a href="index.html"><img src="images/logo.svg" alt="easyBank"></a>
 
             <div class="menu-bttms">   
-                <button class="bttm-menu t hamburguer-icon"><img  src="images/icon-hamburger.svg" alt=""></button>
-                <button class="bttm-menu close-bttm "><img  src="images/icon-close.svg" alt=""></button> 
-            </div>
+                <img  class="hamburguer-bttm" src="images/icon-hamburger.svg" alt="">
+                <img class="close-bttm" src="images/icon-close.svg" alt="">
+            </div>  
             
-
-            <menu>
+            <menu class="header-menu">
                 <ul class="menu-itens flex-row-wrap">
-                    <li><a href="#"></a>Home</li>
-                    <li><a href="#"></a>About</li>
-                    <li><a href="#"></a>Contact</li>
-                    <li><a href="#"></a>Blog</li>
-                    <li><a href="#"></a>Careers</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
                 </ul>
             </menu>
 
@@ -32,7 +36,7 @@
         </header>
 
         <main>
-
+        <!--Banner------------------------------------------->
             <div class="banner">
 
                 <div class="banner-img">
@@ -41,7 +45,7 @@
 
                 <div class="content-box container banner-text">
                         <h2 class="title title-header">
-                            next generation digital bank
+                            next generation digital banking
                         </h2>
         
                         <p class="text text-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque hic natus minus incidunt delectus consectetur mollitia maxime vero nobis!</p>
@@ -49,13 +53,14 @@
                         <button class="request-bttm clicker">Request invite</button>
                 </div>
 
-
             </div>
+
+            <!--Content------------------------------------------->
             
             <div class="content-box bkg-light-grey">
                 <div class="container">
                     <div class="sixty-div">
-                        <h2 class="title title-G"> why choose easyBank</h2>
+                        <h2 class="title title-G"> why choose easyBank?</h2>
                         <p class="text ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, fugiat vitae cumque voluptate aut provident blanditiis est beatae corporis praesentium!</p>
                     </div>
     
@@ -87,6 +92,7 @@
                 </div>
             </div>
 
+            <!--Articles------------------------------------------->
             <div class="bkg-vanilla ">
                 <div class="container content-box ">
                     <h2 class="title title-G">Latest Articles</h2>
@@ -97,7 +103,7 @@
 
                             <div class="article-text">
                                 <h3 class="text article-autor">by claire robinson</h3>     
-                                <h2 class="title title-S">Receive money in any currency with no fees</h2>
+                                <a href="#"><h2 class="title title-S hover-green">Receive money in any currency with no fees</h2></a>
                                 <p class="text text--small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, consequuntur.</p>
                             </div>
                         </div>
@@ -107,7 +113,7 @@
 
                             <div class="article-text">
                                 <h3 class="text article-autor">by claire robinson</h3>     
-                                <h2 class="title title-S">Receive money in any currency with no fees</h2>
+                                <a href="#"><h2 class="title title-S hover-green">Receive money in any currency with no fees</h2></a>
                                 <p class="text text--small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, consequuntur.</p>
                             </div>
                         </div>
@@ -117,7 +123,7 @@
 
                             <div class="article-text">
                                 <h3 class="text article-autor">by claire robinson</h3>     
-                                <h2 class="title title-S">Receive money in any currency with no fees</h2>
+                                <a href="#"><h2 class="title title-S hover-green">Receive money in any currency with no fees</h2></a>
                                 <p class="text text--small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, consequuntur.</p>
                             </div>
                         </div>
@@ -127,61 +133,70 @@
 
                             <div class="article-text">
                                 <h3 class="text article-autor">by claire robinson</h3>     
-                                <h2 class="title title-S">Receive money in any currency with no fees</h2>
+                                <a href="#"><h2 class="title title-S hover-green">Receive money in any currency with no fees</h2></a>
                                 <p class="text text--small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, consequuntur.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--end articles------------------------------------------->
         </main>
+        <!--End body------------------------------------------->
 
         <footer class="bkg-dark">
             <div class="container ">
                 <div class="flex-row-wrap">
-                    <div>
-                        <img class="footer-item" src="images/logo.svg" alt="easyBank">
-                        <div class="footer-item">
-                            <a href="#"  ><img class="social-icon" src="images/icon-facebook.svg" alt=""></a>
-                            <a href="#" class="social-icon"> <img src="images/icon-youtube.svg" alt=""></a>
-                            <a href="#" class="social-icon"><img src="images/icon-twitter.svg" alt=""></a>
-                            <a href="#" class="social-icon"><img src="images/icon-pinterest.svg" alt=""></a>
-                            <a href="#" class="social-icon"><img src="images/icon-instagram.svg" alt=""></a>
-                        </div>
-                    </div>
-        
-                    <div class="flex-row-wrap footer-item" >
+                    <div class="flex-row-wrap">
                         <div>
-                            <a href="#">
-                                <h3>About Us</h3>
-                            </a>
-                            <a href="#">
-                                <h3>Contact</h3>
-                            </a>
-                            <a href="#">
-                                <h3>Blog</h3>
-                            </a>
+                            <img class="footer-item" src="images/logo.svg" alt="easyBank">
+                            <div class="footer-item">
+                                <a href="#"  ><img class="social-icon" src="images/icon-facebook.svg" alt=""></a>
+                                <a href="#" class="social-icon"> <img src="images/icon-youtube.svg" alt=""></a>
+                                <a href="#" class="social-icon"><img src="images/icon-twitter.svg" alt=""></a>
+                                <a href="#" class="social-icon"><img src="images/icon-pinterest.svg" alt=""></a>
+                                <a href="#" class="social-icon"><img src="images/icon-instagram.svg" alt=""></a>
+                            </div>
                         </div>
-        
-                        <div>
-                            <a href="#">
-                                <h3>Careers</h3>
-                            </a>
-                            <a href="#">
-                                <h3>Support</h3>
-                            </a>
-                            <a href="#">
-                                <h3>Privacy Policy</h3>
-                            </a>
-                        </div>
+
+                        <menu class="footer-item footer-menu">
+                            <ul class="flex-row-wrap">
+                                <div>
+                                    <li class="footer-list-item">
+                                        <a class="hover-green" href="">About Us</a>
+                                    </li>
+                                    <li class="footer-list-item">
+                                        <a class="hover-green" href="">Contact</a>
+                                    </li>
+                                    <li class="footer-list-item">
+                                        <a class="hover-green" href="">Blog</a>
+                                    </li>
+                                </div>
+                
+                                <div>
+                                    <li class="footer-list-item">
+                                        <a  class="hover-green" href="">Carreers</a>
+                                    </li>
+                                    <li class="footer-list-item">
+                                        <a class="hover-green" href="">Support</a>
+                                    </li>
+                                    <li class="footer-list-item">
+                                        <a class="hover-green" href="">Privacy Policy</a>
+                                    </li>
+                                </div>
+                            </ul>  
+                        </menu>
                     </div>
-        
+                    
                     <div>
                         <button  class="request-bttm clicker footer-item">Request invite</button>
-                        <h3 class="text text--small footer-item">&copyEasybank. All Rights Reserved</h3>
+                        <h3 class="footer-item copyright">&copyEasybank. All Rights Reserved</h3>
                     </div>
                 </div>
             </div>
-        </footer>       
+        </footer>   
+        
+        
+        <script src="script.js"></script>
     </body>
 </html>
